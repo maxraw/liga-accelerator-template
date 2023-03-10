@@ -2404,7 +2404,7 @@ button,
 
   .footer-navigation__list.footer-navigation__list--open {
     display: block;
-    padding-bottom: 215px;
+    max-height: 100%;
   }
 
   .footer__contacts {
