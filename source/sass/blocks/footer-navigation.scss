@@ -136,8 +136,13 @@
   }
 
   @include vp-767 {
-    width: 100%;
     display: none;
+    width: 100%;
+
+    &.footer-navigation__list--open {
+      display: block;
+      padding-bottom: 215px;
+    }
   }
 }
 
@@ -155,3 +160,5 @@
     min-height: 0;
   }
 }
+
+

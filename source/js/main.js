@@ -1,6 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import modalClose from './modules/modal-close';
+import modalOpen from './modules/modal-open';
+import navigationListOpen from './modules/navigation';
+import contactsListOpen from './modules/contacts';
 
 // ---------------------------------
 
@@ -12,6 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
+  modalClose();
+  modalOpen();
+  contactsListOpen();
+  navigationListOpen();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

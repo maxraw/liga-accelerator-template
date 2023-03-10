@@ -286,7 +286,7 @@
           <div class="footer-navigation">
             <h2 class="footer-navigation__before-closed">Разделы сайта</h2>
             <button class="footer-navigation__button"><span class="visually-hidden">Подробнее</span></button>
-            <ul class="footer-navigation__list footer-navigation__list--open">
+            <ul class="footer-navigation__list">
               <li class="footer-navigation__item">
                 <a href="#about-company-anchor" tabindex="0">О Компании</a>
               </li>
@@ -331,33 +331,20 @@
     </footer>
   </div>
 
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
+  <div class="is-open"></div>
+  <div class="modal-feedback">
+    <form class="modal-feedback__form" action="#" method="post" id="modal-form">
+      <button class="modal-feedback__button-close" type="button" tabindex="0"><span
+          class="visually-hidden">Закрыть</span></button>
+      <h3>Закажите звонок</h3>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <input class="modal-feedback__name" type="text" placeholder="Имя" required>
+      <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" minlength="16" maxlength="16" required>
+      <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
+      <button type="submit">Отправить</button>
+      <input type="checkbox" id="modal-agreement" required>
+      <label for="modal-agreement">Я согласен на обработку персональных данных</label>
+    </form>
   </div>
 
   <script src="js/vendor.min.js"></script>
