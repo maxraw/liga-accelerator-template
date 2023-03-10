@@ -18,21 +18,22 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/btn";
+@import "blocks/modal";
 @import "blocks/header";
-@import "blocks/prewiev";
-@import "blocks/advantages";
-@import "blocks/about-company";
-@import "blocks/products";
-@import "blocks/feedback-form";
 @import "blocks/footer";
 @import "blocks/footer-social";
 @import "blocks/footer-navigation";
 @import "blocks/footer-contacts";
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/products";
+@import "blocks/advantages";
+@import "blocks/about-company";
+@import "blocks/feedback-form";
+@import "blocks/prewiev";
+
+//@import "blocks/custom-input";
+//@import "blocks/custom-toggle";
+//@import "blocks/custom-select";
 
 // ---------------------------------
 

@@ -7,7 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin-right: 0;
+    margin-bottom: 21px;
     padding-top: 0;
   }
 
@@ -44,7 +45,7 @@
 
   @include vp-1023 {
     margin: 0;
-    padding-top: 31px;
+    padding-top: 55px;
     width: 0;
     min-width: 168px;
     justify-content: flex-end;

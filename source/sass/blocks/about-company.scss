@@ -28,11 +28,15 @@
 
   @include vp-1023 {
     width: 670px;
+    margin: 0 -5px;
     padding-left: 0;
+    padding-top: 49px;
   }
 
   @include vp-767 {
     width: 100%;
+    margin: 0;
+    padding-top: 8px;
 
     img {
       display: none;
@@ -46,10 +50,10 @@
 
 .about-company__text-hidden {
   display: block;
-}
 
-.about-company__text-show-desktop {
-  display: none;
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .about-company__text-wrapper {
@@ -74,9 +78,10 @@
   }
 
   @include vp-1023 {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 30px;
 
     p {
+      margin-top: 8px;
       margin-bottom: 17px;
     }
   }

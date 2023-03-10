@@ -1,4 +1,4 @@
-.footer__navigation {
+.footer-navigation {
   // width: 470px;
   width: 19.5vw;
   margin: 0 30px 0 auto;
@@ -54,7 +54,7 @@
     h2 {
       position: relative;
 
-      &.footer__navigation-before-closed {
+      &.footer-navigation__before-closed {
         &::before {
           position: absolute;
           content: "";
@@ -76,7 +76,7 @@
         }
       }
 
-      &.footer__navigation-before--open {
+      &.footer-navigation__before--open {
         &::before {
           position: absolute;
           content: "";
@@ -101,7 +101,7 @@
   }
 }
 
-.footer__navigation-button {
+.footer-navigation__button {
   display: none;
 
   @include vp-767 {
@@ -115,7 +115,7 @@
   }
 }
 
-.footer__navigation-list {
+.footer-navigation__list {
   display: flex;
   flex-direction: column;
   column-gap: 30px;
@@ -138,14 +138,10 @@
   @include vp-767 {
     width: 100%;
     display: none;
-
-    &.footer__navigation-list--open {
-      display: block;
-    }
   }
 }
 
-.footer__navigation-item {
+.footer-navigation__item {
   width: auto;
   max-width: 220px;
   min-height: 32px;

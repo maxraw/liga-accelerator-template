@@ -15,7 +15,9 @@
   @include retina {
     background-image: url("../img/background-desktop@2x.jpg");
   }
+}
 
+.prewiev {
   @include vp-1023 {
     min-height: 656px;
     background-size: cover;
