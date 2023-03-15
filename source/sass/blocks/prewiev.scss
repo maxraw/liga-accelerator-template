@@ -15,9 +15,7 @@
   @include retina {
     background-image: url("../img/background-desktop@2x.jpg");
   }
-}
 
-.prewiev {
   @include vp-1023 {
     min-height: 656px;
     background-size: cover;
@@ -32,6 +30,10 @@
     background-image: url("../img/background-mobile.jpg");
     min-height: 607px;
     background-position: bottom;
+
+    @include retina {
+      background-image: url("../img/background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -62,7 +64,7 @@
 
   @include vp-1023 {
     width: 100%;
-    padding: 136px 0;
+    padding: 136px 50px;
 
     h2 {
       font-weight: 700;
@@ -81,7 +83,7 @@
   }
 
   @include vp-767 {
-    padding: 124px 0;
+    padding: 124px 25px;
 
     h2 {
       margin-top: 75px;
@@ -93,7 +95,7 @@
       font-size: 14px;
       line-height: 155%;
       margin-top: 7px;
-      margin-bottom: 53px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -114,28 +116,28 @@
   text-transform: uppercase;
   padding: 17px 25px;
 
-  .prewiev__button-mobile {
-    display: none;
-  }
-
   @include vp-1023 {
     margin-left: 45px;
   }
 
   @include vp-767 {
+    display: inline-block;
     width: 100%;
-    min-height: 43px;
+    height: 40px;
+    min-height: 40px;
     margin-left: 0;
     font-size: 14px;
     line-height: 16px;
     padding: 11px 36px;
 
-    .prewiev__button-desktop {
-      display: none;
+    span {
+      visibility: hidden;
+      display: block;
     }
 
-    .prewiev__button-mobile {
-      display: inline;
+    ::before {
+      content: "Бесплатная консультация";
+      visibility: visible;
     }
   }
 }

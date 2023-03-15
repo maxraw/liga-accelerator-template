@@ -73,7 +73,7 @@
     border: 4px solid $color-alice-blue;
   }
 
-  label {
+  input[type="checkbox"] + label {
     font-family: "PT Mono", sans-serif;
     font-size: 14px;
     line-height: 16px;

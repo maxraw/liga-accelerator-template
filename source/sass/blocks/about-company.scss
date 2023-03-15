@@ -13,9 +13,8 @@
 .about-company__inner {
   display: flex;
   flex-direction: row;
-  width: 1280px;
-  margin: 0 auto;
-  padding-left: 27px;
+  width: 1300px;
+  padding-left: 40px;
 
   img {
     width: 150px;
@@ -27,10 +26,9 @@
   }
 
   @include vp-1023 {
-    width: 670px;
-    margin: 0 -5px;
-    padding-left: 0;
     padding-top: 49px;
+    padding-left: 0;
+    padding-right: 5px;
   }
 
   @include vp-767 {
@@ -58,7 +56,7 @@
 
 .about-company__text-wrapper {
   color: $color-night-blue;
-  padding: 0 32px 0 100px;
+  padding: 0 0 0 100px;
 
   h3 {
     font-size: 36px;
