@@ -1513,7 +1513,7 @@ button,
   width: 100%;
   background-color: #041827;
   min-height: 879px;
-  background-image: url("../img/background-desktop.jpg");
+  background-image: url("../img/background-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -10%;
@@ -2178,7 +2178,7 @@ button,
   .prewiev {
     min-height: 656px;
     background-size: cover;
-    background-image: url("../img/background-tablet.jpg");
+    background-image: url("../img/background-tablet.webp");
   }
 
   .prewiev__main-screen {
@@ -2208,7 +2208,7 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .prewiev {
-    background-image: url("../img/background-tablet@2x.jpg");
+    background-image: url("../img/background-tablet@2x.webp");
   }
 }
 
@@ -2680,7 +2680,7 @@ button,
   }
 
   .prewiev {
-    background-image: url("../img/background-mobile.jpg");
+    background-image: url("../img/background-mobile.webp");
     min-height: 607px;
     background-position: bottom;
   }
@@ -2732,7 +2732,7 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .prewiev {
-    background-image: url("../img/background-mobile@2x.jpg");
+    background-image: url("../img/background-mobile@2x.webp");
   }
 }
 
@@ -2744,6 +2744,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .prewiev {
-    background-image: url("../img/background-desktop@2x.jpg");
+    background-image: url("../img/background-desktop@2x.webp");
   }
 }
