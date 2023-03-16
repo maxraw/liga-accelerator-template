@@ -1388,10 +1388,6 @@ button,
   margin-right: 30px;
 }
 
-.feedback-form__form input label {
-  display: none;
-}
-
 .feedback-form__form input::-webkit-input-placeholder {
   color: #ffffff;
 }
