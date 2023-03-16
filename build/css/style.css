@@ -1950,7 +1950,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-right: 0;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
     padding-top: 0;
   }
 
@@ -2291,7 +2291,7 @@ button,
 
   .footer-social__list {
     padding: 0;
-    padding-top: 15px;
+    padding-top: 8px;
     min-width: 214px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
