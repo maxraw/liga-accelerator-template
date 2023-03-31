@@ -329,10 +329,11 @@
             class="visually-hidden">Закрыть</span></button>
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <input class="modal-feedback__name" autofocus="autofocus" type="text" placeholder="Имя" id="modal-name" equired>
+        <input class="modal-feedback__name" tabindex="0" autofocus type="text" placeholder="Имя" id="modal-name"
+          required>
         <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
-        <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" pattern="2-[0-9]{3}-[0-9]{3}" data-tel-input
-          minlength="18" maxlength="18" required>
+        <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" required minlength="18" maxlength="18"
+          data-tel-input pattern="2-[0-9]{3}-[0-9]{3}">
         <label class="visually-hidden" for="phone-mask">Укажите номер телефона</label>
         <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос" id="modal-textfield"></textarea>
         <label class="visually-hidden" for="modal-textfield">Задайте вопрос</label>
