@@ -13,33 +13,37 @@ const modalOpen = () => {
     wrapper.inert = true;
   });
 
-  function trapFocus(element) {
-    let focusableEls = element.querySelectorAll('.modal-feedback__name, #phone-mask, #modal-textfield, .modal-feedback__send, #modal-agreement, .modal-feedback__button-close');
-    let firstFocusableEl = focusableEls[0];
-    let lastFocusableEl = focusableEls[focusableEls.length - 1];
-    let KEYCODE_TAB = 9;
+  isOpen.addEventListener('transitionend', function (event) {
+    if (event.target.classList.contains('modal-feedback') && modal.classList.contains('is-open')) {
+      inputName.focus();
+    }
+  });
 
-    element.addEventListener('keydown', function(e) {
-      let isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+  const modal = document.querySelector('.modal-feedback');
+  const focusableElements = modal.querySelectorAll('a[href], button:not([disabled]), textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select');
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length - 1];
+  let KEYCODE_TAB = 9;
 
-      if (!isTabPressed) {
-        return;
+  document.addEventListener('keydown', function (e) {
+    let isTabPressed = e.key === 'Tab' || e.keyCode === KEYCODE_TAB;
+
+    if (!isTabPressed) {
+      return;
+    }
+
+    if (e.shiftKey) {
+      if (document.activeElement === firstElement) {
+        lastElement.focus();
+        e.preventDefault();
       }
-
-      if (e.shiftKey) /* shift + tab */ {
-        if (document.activeElement === firstFocusableEl) {
-          lastFocusableEl.focus();
-          e.preventDefault();
-        }
-      } else /* tab */ {
-        if (document.activeElement === lastFocusableEl) {
-          firstFocusableEl.focus();
-          e.preventDefault();
-        }
+    } else {
+      if (document.activeElement === lastElement) {
+        firstElement.focus();
+        e.preventDefault();
       }
-    });
-  }
-  trapFocus();
+    }
+  });
 };
 
 
