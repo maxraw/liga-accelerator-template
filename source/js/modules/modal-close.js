@@ -18,15 +18,18 @@ const modalClose = () => {
     }
   });
 
-  isOpen.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    windowClose();
+  isOpen.addEventListener('click', (e) => {
+    if (e.target === isOpen) {
+      windowClose();
+    }
   });
 
-  buttonClose.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    windowClose();
+  buttonClose.addEventListener('click', (e) => {
+    if (e.target === buttonClose) {
+      windowClose();
+    }
   });
 };
+
 
 export default modalClose;
