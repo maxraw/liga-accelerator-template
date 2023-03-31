@@ -63,9 +63,10 @@
                 <use xlink:href="img/sprite/sprite.svg#stopwatch"></use>
               </svg>
               <h3>Оперативные сроки</h3>
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
-                доставлять
-                заказы плат и комплектующих в самые короткие сроки</p>
+              <p>
+                Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+                заказы плат и комплектующих в самые короткие сроки
+              </p>
             </div>
           </li>
           <li class="advantages__item advantages__item-purveyor">
@@ -75,7 +76,8 @@
                 <use xlink:href="img/sprite/sprite.svg#hired"></use>
               </svg>
               <h3>Крупные поставщики</h3>
-              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              <p>
+                Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
                 Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </div>
@@ -111,22 +113,24 @@
         <div class="container about-company__inner">
           <!-- 1x: 300px, 2x 600px -->
           <img src="img/2022.png" alt="2022 год" width="150" height="320" loading="lazy">
-          <div class="about-company__text-wrapper">
-            <h3>О компании</h3>
-            <p>
-              Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
-              мировые&nbsp;технологии с 1997 года.
-              Выполняем срочные заказы и пилотные образцы до 10 дней.
-            </p>
-            <p>
-              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              <span class="about-company__text-hidden">
-                Печатные платы и комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных
-                Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
-                Производители светотехники России.
-              </span>
-            </p>
-            <button class="about-company__show-more" type="button">Подробнее</button>
+          <div class="about-company__spoiler-wrapper">
+            <input type="checkbox" class="about-company__read-more" id="visible">
+            <div class="about-company__spoiler-content">
+              <h3>О компании</h3>
+              <p>
+                Мы поставляем электронные комплектующие, производим печатные платы
+                и предоставляем мировые&nbsp;технологии с 1997 года.
+                Выполняем срочные заказы и пилотные образцы до 10 дней.
+              </p>
+              <p>
+                Наши поставщики — мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                <span class="about-company__text-hide">Печатные платы и комплектующие Service Devices применяются
+                  на&nbsp;предприятиях
+                  Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+                  Среди наших клиентов крупнейшие Производители светотехники России.</span>
+              </p>
+            </div>
+            <label for="visible" class="about-company__read-more-trigger"></label>
           </div>
         </div>
       </section>
@@ -142,7 +146,7 @@
               <a href="#">
                 <picture>
                   <!-- 1x: 350px, 2x 700px -->
-                  <source type="image/webp" media="(min-width: 1024px)"
+                  <source type="image/webp" media="(min-width: 1280px)"
                     srcset="img/card-one-desktop.webp 1x, img/card-one-desktop@2x.webp 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source type="image/webp" media="(min-width: 768px)"
@@ -150,7 +154,7 @@
                   <!-- 1x: 270px, 2x 540px -->
                   <source type="image/webp" srcset="img/card-one-mobile.webp 1x, img/card-one-mobile@2x.webp 2x">
                   <!-- 1x: 350px, 2x 700px -->
-                  <source media="(min-width: 1024px)"
+                  <source media="(min-width: 1280px)"
                     srcset="img/card-one-desktop.jpg 1x, img/card-one-desktop@2x.jpg 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source media="(min-width: 768px)" srcset="img/card-two-tablet.jpg 1x, img/card-two-tablet@2x.jpg 2x">
@@ -168,7 +172,7 @@
               <a href="#">
                 <picture>
                   <!-- 1x: 350px, 2x 700px -->
-                  <source type="image/webp" media="(min-width: 1024px)"
+                  <source type="image/webp" media="(min-width: 1280px)"
                     srcset="img/card-two-desktop.webp 1x, img/card-two-desktop@2x.webp 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source type="image/webp" media="(min-width: 768px)"
@@ -176,7 +180,7 @@
                   <!-- 1x: 270px, 2x 540px -->
                   <source type="image/webp" srcset="img/card-two-mobile.webp 1x, img/card-two-mobile@2x.webp 2x">
                   <!-- 1x: 350px, 2x 700px -->
-                  <source media="(min-width: 1024px)"
+                  <source media="(min-width: 1280px)"
                     srcset="img/card-two-desktop.jpg 1x, img/card-two-desktop@2x.jpg 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source media="(min-width: 768px)"
@@ -195,7 +199,7 @@
               <a href="#">
                 <picture>
                   <!-- 1x: 350px, 2x 700px -->
-                  <source type="image/webp" media="(min-width: 1024px)"
+                  <source type="image/webp" media="(min-width: 1280px)"
                     srcset="img/card-three-desktop.webp 1x, img/card-three-desktop@2x.webp 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source type="image/webp" media="(min-width: 768px)"
@@ -203,7 +207,7 @@
                   <!-- 1x: 270px, 2x 540px -->
                   <source type="image/webp" srcset="img/card-three-mobile.webp 1x, img/card-three-mobile@2x.webp 2x">
                   <!-- 1x: 350px, 2x 700px -->
-                  <source media="(min-width: 1024px)"
+                  <source media="(min-width: 1280px)"
                     srcset="img/card-three-desktop.jpg 1x, img/card-three-desktop@2x.jpg 2x">
                   <!-- 1x: 670px, 2x 1340px -->
                   <source media="(min-width: 768px)" srcset="img/card-one-tablet.jpg 1x, img/card-one-tablet@2x.jpg 2x">
@@ -230,7 +234,8 @@
               <label class="visually-hidden" for="name">Введите имя</label>
             </div>
             <div class="feedback-form__input-wrapper-right">
-              <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" required minlength="16" maxlength="16">
+              <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" required minlength="18" maxlength="18"
+                data-tel-input pattern="2-[0-9]{3}-[0-9]{3}">
               <label class="visually-hidden" for="phone-mask">Укажите Ваш номер телефона</label>
             </div>
             <textarea name="text" cols="80" rows="6" id="question" placeholder="Ваш вопрос"></textarea>
@@ -302,9 +307,9 @@
           </ul>
         </section>
         <section class="footer-contacts" id="contacts-anchor">
-          <h2 class="footer-contacts__before-open">Наш офис</h2>
+          <h2 class="footer-contacts__before-closed">Наш офис</h2>
           <button class="footer-contacts__button"><span class="visually-hidden">Подробнее</span></button>
-          <ul class="footer-contacts__list footer-contacts__list--open">
+          <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
               <address>г. Мытищи, Олимпийский проспект, д.10</address>
             </li>
@@ -317,23 +322,25 @@
     </footer>
   </div>
 
-  <div class="is-open"></div>
-  <div class="modal-feedback">
-    <form class="modal-feedback__form" action="https://echo.htmlacademy.ru/" method="post" id="modal-form">
-      <button class="modal-feedback__button-close" type="button" tabindex="0"><span
-          class="visually-hidden">Закрыть</span></button>
-      <h3>Закажите звонок</h3>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <input class="modal-feedback__name" type="text" placeholder="Имя" id="modal-name" required>
-      <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
-      <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" minlength="16" maxlength="16" required>
-      <label class="visually-hidden" for="phone-mask-modal">Укажите номер телефона</label>
-      <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос" id="modal-textfield"></textarea>
-      <label class="visually-hidden" for="modal-textfield">Задайте вопрос</label>
-      <button type="submit">Отправить</button>
-      <input type="checkbox" id="modal-agreement" required>
-      <label for="modal-agreement">Я согласен на обработку персональных данных</label>
-    </form>
+  <div class="is-open">
+    <div class="modal-feedback">
+      <form class="modal-feedback__form" action="https://echo.htmlacademy.ru/" method="post" id="modal-form">
+        <button class="modal-feedback__button-close" type="button" tabindex="0"><span
+            class="visually-hidden">Закрыть</span></button>
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <input class="modal-feedback__name" autofocus="autofocus" type="text" placeholder="Имя" id="modal-name" equired>
+        <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
+        <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" pattern="2-[0-9]{3}-[0-9]{3}" data-tel-input
+          minlength="18" maxlength="18" required>
+        <label class="visually-hidden" for="phone-mask">Укажите номер телефона</label>
+        <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос" id="modal-textfield"></textarea>
+        <label class="visually-hidden" for="modal-textfield">Задайте вопрос</label>
+        <button type="submit">Отправить</button>
+        <input type="checkbox" id="modal-agreement" required>
+        <label for="modal-agreement">Я согласен на обработку персональных данных</label>
+      </form>
+    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>

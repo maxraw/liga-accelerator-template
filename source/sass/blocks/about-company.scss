@@ -5,7 +5,7 @@
     padding: 0 0 79px 0;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     padding-bottom: 80px;
   }
 }
@@ -31,7 +31,7 @@
     padding-right: 5px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     width: 100%;
     margin: 0;
     padding-top: 8px;
@@ -42,21 +42,22 @@
   }
 }
 
-.about-company__text-show {
-  display: none;
-}
+.about-company__spoiler-wrapper {
+  padding: 0 0 0 100px;
 
-.about-company__text-hidden {
-  display: block;
-
-  @include vp-767 {
+  input {
     display: none;
+  }
+
+  @include vp-1023 {
+    padding: 0;
   }
 }
 
-.about-company__text-wrapper {
+.about-company__spoiler-content {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
   color: $color-night-blue;
-  padding: 0 0 0 100px;
 
   h3 {
     font-size: 36px;
@@ -71,7 +72,7 @@
   p {
     line-height: 22px;
     font-family: "PT Mono", sans-serif;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 21px;
   }
 
@@ -84,7 +85,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     padding: 0;
 
     h3 {
@@ -97,14 +98,43 @@
       line-height: 134.4%;
       margin-top: 13px;
       margin-bottom: 17px;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
     }
   }
 }
 
-.about-company__show-more {
+.about-company__text-hide {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.about-company__read-more:checked ~ .about-company__spoiler-content .about-company__text-hide {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.about-company__read-more ~ .about-company__read-more-trigger::before {
+  content: "Подробнее";
+}
+
+.about-company__read-more:checked ~ .about-company__read-more-trigger::before {
+  content: "Подробнее";
+}
+
+.about-company__read-more-trigger {
   cursor: pointer;
+  display: inline-block;
   min-width: 180px;
   min-height: 45px;
+  margin-top: 17px;
+  padding: 15px;
+  text-align: center;
   border: 1px solid $color-deep-sky-blue;
   border-radius: 3px;
   background-color: inherit;
@@ -114,14 +144,16 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-deep-sky-blue;
-  margin-top: 20px;
 
   @include vp-1023 {
     margin-top: 0;
+    margin-left: 30px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     min-width: 160px;
     min-height: 35px;
+    margin-left: 0;
+    padding: 10px;
   }
 }

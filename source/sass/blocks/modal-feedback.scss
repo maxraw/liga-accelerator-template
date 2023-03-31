@@ -2,15 +2,13 @@
   position: absolute;
   width: 500px;
   height: 610px;
-  z-index: 1002;
-  top: 41%;
-  left: 50%;
-  margin-left: -257px;
-  margin-top: -321px;
+  z-index: 5;
+  top: 17.5%;
+  left: 36.5%;
   background-color: $color-deep-sky-blue;
   display: none;
 
-  @include vp-767 {
+  @include vp-768 {
     width: 100%;
     margin-left: 0;
     left: 0;

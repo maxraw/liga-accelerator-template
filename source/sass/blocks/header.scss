@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  z-index: 1001;
+  z-index: 3;
   top: 0;
   left: 0;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -12,7 +12,7 @@
     min-width: 770px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     min-width: 320px;
   }
 }
@@ -26,7 +26,7 @@
     padding: 8px 50px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     padding: 12px 25px;
   }
 }
@@ -51,9 +51,9 @@
     width: auto;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     min-height: 38px;
-    max-width: 767px;
+    max-width: 768px;
     min-width: 269px;
   }
 }
@@ -75,7 +75,7 @@
     margin-right: 10px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     width: 224px;
   }
 }
@@ -159,7 +159,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     left: 9px;
     top: 5px;
   }
@@ -198,7 +198,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     left: 9px;
     top: 5px;
   }
@@ -208,7 +208,7 @@
   margin-top: 12px;
   margin-bottom: auto;
 
-  @include vp-767 {
+  @include vp-768 {
     display: none;
   }
 }
@@ -216,7 +216,7 @@
 .header__logo-mobile {
   display: none;
 
-  @include vp-767 {
+  @include vp-768 {
     display: block;
   }
 }

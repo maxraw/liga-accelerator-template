@@ -11,17 +11,20 @@ const windowClose = () => {
 };
 
 const modalClose = () => {
-  modalFeedback.addEventListener('keydown', (evt) => {
+  window.addEventListener('keydown', (evt) => {
     if (evt.key === 'Escape') {
+      evt.preventDefault();
       windowClose();
     }
   });
 
-  isOpen.addEventListener('click', () => {
+  isOpen.addEventListener('click', (evt) => {
+    evt.preventDefault();
     windowClose();
   });
 
-  buttonClose.addEventListener('click', () => {
+  buttonClose.addEventListener('click', (evt) => {
+    evt.preventDefault();
     windowClose();
   });
 };

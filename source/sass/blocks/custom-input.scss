@@ -6,7 +6,7 @@
   width: 530px;
   padding: 14px 0 28px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding: 4px 0 48px;
     width: 100%;
   }
@@ -16,7 +16,7 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -35,7 +35,7 @@
 
       transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         max-width: unset;
         width: 100%;
       }
@@ -51,7 +51,7 @@
   }
 
   &__label {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       margin: 0 0 18px 0;
     }
   }
@@ -67,7 +67,7 @@
 
     transition: opacity 0.3s ease;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       bottom: 20px;
     }
   }

@@ -3,23 +3,22 @@
 }
 
 .products__inner {
-  padding: 70px 0 112px;
-  width: 100%;
+  width: 1220px;
   margin: 0 auto;
-  padding-left: 82px;
+  padding: 70px 0 112px;
 
-  @include vp-1439 {
-    width: 100%;
-  }
-
-  @include vp-1023 {
-    padding: 57px 0 42px 0;
+  @include vp-1279 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: auto;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
+    padding: 57px 50px 42px;
+  }
+
+  @include vp-768 {
     padding-top: 47px;
     padding-bottom: 53px;
 
@@ -36,16 +35,26 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1279 {
+    justify-content: center;
+  }
 }
 
 .products__item {
   position: relative;
   margin-right: 85px;
   margin-bottom: 30px;
+  opacity: 0.6;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
 
   &:hover {
     outline: 2px solid $color-default-white;
@@ -103,14 +112,20 @@
     z-index: 1000;
   }
 
-  @include vp-1023 {
+  @include vp-1439 {
     margin-right: 0;
-    margin-bottom: 31px;
+  }
 
+  @include vp-1279 {
     img {
       width: 670px;
       height: 250px;
     }
+  }
+
+  @include vp-1023 {
+    margin-right: 0;
+    margin-bottom: 31px;
 
     p {
       width: 150px;
@@ -129,12 +144,12 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     margin-left: auto;
     margin-right: auto;
 
     img {
-      width: 270px;
+      min-width: 270px;
       height: 250px;
     }
 
@@ -158,26 +173,25 @@
 }
 
 .products__title-desktop {
+  margin-top: 0;
+  margin-bottom: 52px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
-  margin-top: 0;
-  margin-bottom: 52px;
-  padding-left: 268px;
 
   @include vp-1023 {
-    padding-left: 50px;
     margin-bottom: 36px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
+    width: 365px;
     max-height: 70px;
     margin-right: 45px;
     padding-left: 0;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     span {
       visibility: hidden;
       display: block;

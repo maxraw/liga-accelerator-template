@@ -26,7 +26,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     background-image: url("../img/background-mobile.webp");
     min-height: 607px;
     background-position: bottom;
@@ -82,7 +82,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-768 {
     padding: 124px 25px;
 
     h2 {
@@ -120,7 +120,7 @@
     margin-left: 45px;
   }
 
-  @include vp-767 {
+  @include vp-768 {
     display: inline-block;
     width: 100%;
     height: 40px;
