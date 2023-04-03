@@ -35,4 +35,4 @@ export default function phoneMask(e) {
   e.target.value = value;
 }
 document.getElementById('phone-mask').addEventListener('input', phoneMask);
-
+document.getElementById('phone-mask-modal').addEventListener('input', phoneMask);

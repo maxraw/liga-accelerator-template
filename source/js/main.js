@@ -6,6 +6,7 @@ import modalOpen from './modules/modal-open';
 import navigationListOpen from './modules/navigation';
 import contactsListOpen from './modules/contacts';
 import phoneMask from './modules/phone-mask';
+import './utils/focus-lock';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   contactsListOpen();
   navigationListOpen();
   phoneMask();
+
 
   // ---------------------------------
 
