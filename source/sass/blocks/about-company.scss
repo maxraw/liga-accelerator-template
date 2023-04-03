@@ -145,6 +145,11 @@
   text-transform: uppercase;
   color: $color-deep-sky-blue;
 
+  &:hover {
+    color: $color-сerulean;
+    border: 1px solid $color-сerulean;
+  }
+
   @include vp-1023 {
     margin-top: 0;
     margin-left: 30px;

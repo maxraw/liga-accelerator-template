@@ -153,6 +153,10 @@
 
   a {
     color: $color-text-opacity;
+
+    &:hover {
+      color: $color-deep-sky-blue;
+    }
   }
 
   @include vp-1023 {

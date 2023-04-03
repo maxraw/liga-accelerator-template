@@ -116,6 +116,10 @@
   text-transform: uppercase;
   padding: 17px 25px;
 
+  &:hover {
+    border: 1px solid $color-border;
+  }
+
   @include vp-1023 {
     margin-left: 45px;
   }

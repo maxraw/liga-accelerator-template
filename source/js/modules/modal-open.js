@@ -13,7 +13,7 @@ const modalOpen = () => {
     wrapper.inert = true;
   });
 
-  isOpen.addEventListener('transitionend', function (event) {
+  buttonOpen.addEventListener('transitionend', function (event) {
     if (event.target.classList.contains('modal-feedback') && modal.classList.contains('is-open')) {
       inputName.focus();
     }

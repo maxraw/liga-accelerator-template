@@ -89,6 +89,10 @@
     font-family: "PT Mono", sans-serif;
     line-height: 18px;
     color: $color-text-white;
+
+    &:hover {
+      color: $color-deep-sky-blue;
+    }
   }
 
   @include vp-1023 {
@@ -120,6 +124,10 @@
   border-radius: 3px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
+  &:hover {
+    color: $color-deep-sky-blue;
+    border: 1px solid $color-deep-sky-blue;
+  }
 
   @include vp-1023 {
     display: none;

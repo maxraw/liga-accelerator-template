@@ -72,6 +72,10 @@
   background-image: url("../img/svg/pinterest.svg");
   background-repeat: no-repeat;
 
+  &:hover {
+    background-image: url("../img/svg/pinterest-hover.svg");
+  }
+
   @include vp-1023 {
     width: 35px;
     height: 35px;
@@ -83,6 +87,10 @@
   height: 40px;
   background-image: url("../img/svg/ok.svg");
 
+  &:hover {
+    background-image: url("../img/svg/ok-hover.svg");
+  }
+
   @include vp-1023 {
     width: 35px;
     height: 35px;
@@ -93,6 +101,10 @@
   width: 40px;
   height: 40px;
   background-image: url("../img/svg/vk.svg");
+
+  &:hover {
+    background-image: url("../img/svg/vk-hover.svg");
+  }
 
   @include vp-1023 {
     width: 35px;
