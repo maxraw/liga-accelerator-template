@@ -35,6 +35,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    const lockBtnElement = document.querySelector('.lock');
+    const unlockBtnElement = document.querySelector('.unlock');
+
+    lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
+    unlockBtnElement.addEventListener('click', () => window.focusLock.unlock());
   });
 });
 

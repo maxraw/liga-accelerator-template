@@ -37,7 +37,7 @@
               </a>
             </li>
           </ul>
-          <a class="header__button" href="#modal-form">Заказать звонок</a>
+          <a class="header__button lock" href="#modal-form">Заказать звонок</a>
         </nav>
       </div>
     </header>
@@ -322,15 +322,15 @@
     </footer>
   </div>
 
-  <div class="is-open">
+  <div class="is-open lock-block">
     <div class="modal-feedback">
-      <button class="modal-feedback__button-close" type="button" tabindex="0"><span
-          class="visually-hidden">Закрыть</span></button>
+      <button class="modal-feedback__button-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <form class="modal-feedback__form" action="https://echo.htmlacademy.ru/" method="post" id="modal-form">
-
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <input class="modal-feedback__name" data-focus autofocus type="text" placeholder="Имя" id="modal-name" required>
+        <input class="modal-feedback__name" autofocus type="text" placeholder="Имя" id="modal-name" data-focus required>
         <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
         <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required minlength="18" maxlength="18"
           data-tel-input pattern="2-[0-9]{3}-[0-9]{3}">
@@ -339,7 +339,7 @@
         <label class="visually-hidden" for="modal-textfield">Задайте вопрос</label>
         <button class="modal-feedback__send" type="submit">Отправить</button>
         <input type="checkbox" id="modal-agreement" required>
-        <label for="modal-agreement" tabindex="1">Я согласен на обработку персональных данных</label>
+        <label for="modal-agreement">Я согласен на обработку персональных данных</label>
       </form>
     </div>
   </div>
