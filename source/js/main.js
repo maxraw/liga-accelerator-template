@@ -5,8 +5,7 @@ import modalClose from './modules/modal-close';
 import modalOpen from './modules/modal-open';
 import navigationListOpen from './modules/navigation';
 import contactsListOpen from './modules/contacts';
-import phoneMask from './modules/phone-mask';
-import './utils/focus-lock';
+import initPhoneMask from './modules/phone-mask';
 
 // ---------------------------------
 
@@ -23,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
   modalOpen();
   contactsListOpen();
   navigationListOpen();
-  phoneMask();
 
 
   // ---------------------------------
@@ -35,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initPhoneMask();
 
     const lockBtnElement = document.querySelector('.lock');
     const unlockBtnElement = document.querySelector('.unlock');
