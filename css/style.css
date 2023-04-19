@@ -1907,6 +1907,9 @@ button,
   grid-template-rows: 146px 610px 84px;
   -ms-grid-columns: 702px 500px 718px;
   grid-template-columns: 702px 500px 718px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   left: 0;
