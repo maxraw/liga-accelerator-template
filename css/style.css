@@ -1905,8 +1905,8 @@ button,
   background-color: rgba(3, 16, 27, 0.7);
   -ms-grid-rows: 146px 610px 84px;
   grid-template-rows: 146px 610px 84px;
-  -ms-grid-columns: 702px 500px 718px;
-  grid-template-columns: 702px 500px 718px;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
