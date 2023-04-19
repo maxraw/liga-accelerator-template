@@ -1683,9 +1683,12 @@ button,
 }
 
 .modal-feedback {
-  position: absolute;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
   width: 500px;
-  min-height: 610px;
+  max-height: 610px;
   z-index: 5;
   top: 16.2%;
   -ms-grid-column-align: center;
@@ -1900,6 +1903,10 @@ button,
   display: none;
   position: fixed;
   background-color: rgba(3, 16, 27, 0.7);
+  -ms-grid-rows: 146px 610px 20px;
+  grid-template-rows: 146px 610px 20px;
+  -ms-grid-columns: 702px 500px 718px;
+  grid-template-columns: 702px 500px 718px;
   width: 100%;
   height: 100%;
   left: 0;
