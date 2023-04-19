@@ -1688,13 +1688,15 @@ button,
   -ms-grid-row: 2;
   grid-row-start: 2;
   width: 500px;
-  max-height: 610px;
+  height: auto;
+  min-height: 0;
   z-index: 5;
   top: 16.2%;
   -ms-grid-column-align: center;
   justify-self: center;
   background-color: #00b2ff;
   display: none;
+  overflow: auto;
 }
 
 .modal-feedback .modal-feedback__button-close {
@@ -1739,9 +1741,7 @@ button,
 }
 
 .modal-feedback__form {
-  padding: 40px;
-  padding-top: 0;
-  color: #f8fdff;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,7 +1751,11 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: auto;
-  position: relative;
+  height: auto;
+  min-height: 0;
+  padding: 40px;
+  padding-top: 0;
+  color: #f8fdff;
 }
 
 .modal-feedback__form h3 {
