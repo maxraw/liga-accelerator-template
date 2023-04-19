@@ -439,6 +439,8 @@ html {
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", "PT Mono", sans-serif;
   color: #000000;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1410,8 +1412,6 @@ button,
   background: -o-linear-gradient(311deg, #006694 34%, #00b2ff 34%);
   background: linear-gradient(139deg, #006694 34%, #00b2ff 34%);
   background-size: cover;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .feedback-form__inner {

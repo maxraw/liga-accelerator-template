@@ -1,8 +1,6 @@
 .feedback-form {
   background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
   background-size: cover;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 
   @include vp-1023 {
     background: linear-gradient(139deg, $color-deep-sky-blue 34%, $color-deep-sky-blue 34%);
