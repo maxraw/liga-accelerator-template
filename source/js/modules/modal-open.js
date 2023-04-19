@@ -3,6 +3,13 @@ const modalFeedback = document.querySelector('.modal-feedback');
 const isOpen = document.querySelector('.is-open');
 const inputName = document.querySelector('#modal-name');
 const wrapper = document.querySelector('.wrapper');
+const headerButton = document.querySelector('.header__button.lock');
+const modalForm = document.getElementById('modal-form');
+
+headerButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  modalForm.classList.add('modal_active');
+});
 
 const modalOpen = () => {
   buttonOpen.addEventListener('click', () => {
