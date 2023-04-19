@@ -1,8 +1,8 @@
 .about-company {
-  padding: 90px 0 99px 0;
+  padding: 90px 0 102px 0;
 
   @include vp-1023 {
-    padding: 0 0 79px 0;
+    padding: 0 0 72px 0;
   }
 
   @include vp-768 {
@@ -106,11 +106,26 @@
   }
 }
 
-.about-company__text-hide {
+.about-company__user-text-hide {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   transition: opacity 0.4s ease-in-out;
+}
+
+.about-company__read-more:checked ~ .about-company__spoiler-content .about-company__user-text-hide {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.about-company__text-hide {
+  @include vp-768 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
 }
 
 .about-company__read-more:checked ~ .about-company__spoiler-content .about-company__text-hide {
@@ -124,7 +139,7 @@
 }
 
 .about-company__read-more:checked ~ .about-company__read-more-trigger::before {
-  content: "Подробнее";
+  content: "Свернуть";
 }
 
 .about-company__read-more-trigger {

@@ -5,7 +5,7 @@
 .products__inner {
   width: 1220px;
   margin: 0 auto;
-  padding: 70px 0 112px;
+  padding: 67px 0 110px;
 
   @include vp-1279 {
     display: flex;
@@ -15,7 +15,7 @@
   }
 
   @include vp-1023 {
-    padding: 57px 50px 42px;
+    padding: 55px 50px 44px;
   }
 
   @include vp-768 {

@@ -937,6 +937,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 20px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1125,7 +1126,7 @@ button,
 .products__inner {
   width: 1220px;
   margin: 0 auto;
-  padding: 70px 0 112px;
+  padding: 67px 0 110px;
 }
 
 .products__list {
@@ -1299,7 +1300,7 @@ button,
 }
 
 .about-company {
-  padding: 90px 0 99px 0;
+  padding: 90px 0 102px 0;
 }
 
 .about-company__inner {
@@ -1352,13 +1353,19 @@ button,
   margin-bottom: 21px;
 }
 
-.about-company__text-hide {
+.about-company__user-text-hide {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   -webkit-transition: opacity 0.4s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
+}
+
+.about-company__read-more:checked ~ .about-company__spoiler-content .about-company__user-text-hide {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
 }
 
 .about-company__read-more:checked ~ .about-company__spoiler-content .about-company__text-hide {
@@ -1372,7 +1379,7 @@ button,
 }
 
 .about-company__read-more:checked ~ .about-company__read-more-trigger::before {
-  content: "Подробнее";
+  content: "Свернуть";
 }
 
 .about-company__read-more-trigger {
@@ -1403,6 +1410,8 @@ button,
   background: -o-linear-gradient(311deg, #006694 34%, #00b2ff 34%);
   background: linear-gradient(139deg, #006694 34%, #00b2ff 34%);
   background-size: cover;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .feedback-form__inner {
@@ -1440,7 +1449,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .feedback-form__form input {
@@ -1452,7 +1461,8 @@ button,
   border-radius: 3px;
   border: 1px solid rgba(4, 20, 39, 0.15);
   margin-bottom: 22px;
-  margin-right: 30px;
+  margin-right: 25px;
+  margin-left: 5px;
 }
 
 .feedback-form__form input:hover {
@@ -1485,9 +1495,12 @@ button,
   width: 15px;
   height: 15px;
   margin: 0;
-  margin-left: 55px;
+  margin-left: 50px;
   margin-right: 12px;
   margin-top: 23px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .feedback-form__form input[type=checkbox]:focus + label::before {
@@ -1495,14 +1508,17 @@ button,
 }
 
 .feedback-form__form input[type=checkbox] + label {
-  font-family: "PT Mono", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #f8fdff;
   opacity: 0.8;
   width: 234px;
   margin-top: 16px;
   position: relative;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  font-family: "PT Mono", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #f8fdff;
 }
 
 .feedback-form__form input[type=checkbox] + label::before {
@@ -1539,6 +1555,7 @@ button,
   border-radius: 3px;
   border: 1px solid rgba(4, 20, 39, 0.15);
   margin-bottom: 30px;
+  margin-left: 5px;
 }
 
 .feedback-form__form textarea:hover {
@@ -1566,7 +1583,8 @@ button,
 }
 
 .feedback-form__form button {
-  padding: 14px 72px;
+  margin-left: 5px;
+  padding: 14px 70px;
   background: #041427;
   border-radius: 3px;
   color: #f8fdff;
@@ -1586,6 +1604,7 @@ button,
   width: 510px;
   height: 285px;
   background-image: url("../img/paper_airplane.png");
+  background-size: 510px 285px;
   background-repeat: no-repeat;
   left: -626px;
   top: 79px;
@@ -1646,7 +1665,7 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 17px 25px;
+  padding: 17px 27px;
 }
 
 .prewiev__button:hover {
@@ -1778,6 +1797,9 @@ button,
   margin-left: 0;
   margin-right: 12px;
   margin-top: 15px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .modal-feedback__form input[type=checkbox]:focus + label::before {
@@ -1785,14 +1807,17 @@ button,
 }
 
 .modal-feedback__form input[type=checkbox] + label {
+  position: relative;
+  width: auto;
+  margin-top: 16px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
   font-family: "PT Mono", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #f8fdff;
   opacity: 0.8;
-  width: auto;
-  margin-top: 16px;
-  position: relative;
 }
 
 .modal-feedback__form input[type=checkbox] + label::before {
@@ -1922,29 +1947,35 @@ button,
     margin-right: 0;
   }
 
+  .advantages__item {
+    width: 500px;
+  }
+
   .about-company__inner {
     width: 88.8vw;
-  }
-
-  .feedback-form {
-    background: -o-linear-gradient(311deg, #00b2ff 34%, #00b2ff 34%);
-    background: linear-gradient(139deg, #00b2ff 34%, #00b2ff 34%);
-  }
-
-  .feedback-form__inner {
-    width: auto;
-  }
-
-  .feedback-form__form {
-    margin: 0 auto;
-  }
-
-  .feedback-form__form::before {
-    background-image: none;
   }
 }
 
 @media (max-width: 1279px) {
+  .footer__inner {
+    padding: 44px 50px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer-social {
+    margin: 0;
+  }
+
+  .footer-navigation {
+    margin: 0;
+  }
+
+  .footer-contacts {
+    margin-right: 0;
+  }
+
   .products__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1966,6 +1997,42 @@ button,
   .products__item img {
     width: 670px;
     height: 250px;
+  }
+
+  .advantages__item {
+    width: 400px;
+  }
+
+  .feedback-form__inner {
+    width: 1024px;
+  }
+
+  .feedback-form__form::before {
+    left: -425px;
+    width: 390px;
+    height: 180px;
+    background-size: 390px 180px;
+  }
+
+  .feedback-form__form {
+    width: 585px;
+  }
+
+  .feedback-form__form input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .feedback-form__form textarea {
+    width: 547px;
+    padding-top: 33px;
+    padding-bottom: 10px;
+    margin-bottom: 33px;
+    margin-left: 0;
+  }
+
+  .feedback-form__input-wrapper-left {
+    margin-right: 45px;
   }
 }
 
@@ -2057,7 +2124,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-right: 0;
-    margin-bottom: 18px;
+    margin-bottom: 0;
     padding-top: 0;
   }
 
@@ -2094,9 +2161,9 @@ button,
   }
 
   .footer-navigation {
-    width: 50%;
+    width: auto;
     margin: 0;
-    padding-top: 19px;
+    padding-top: 15px;
   }
 
   .footer-navigation h2 {
@@ -2122,7 +2189,7 @@ button,
   }
 
   .products__inner {
-    padding: 57px 50px 42px;
+    padding: 55px 50px 44px;
   }
 
   .products__item {
@@ -2191,7 +2258,7 @@ button,
   }
 
   .about-company {
-    padding: 0 0 79px 0;
+    padding: 0 0 72px 0;
   }
 
   .about-company__inner {
@@ -2218,7 +2285,13 @@ button,
     margin-left: 30px;
   }
 
+  .feedback-form {
+    background: -o-linear-gradient(311deg, #00b2ff 34%, #00b2ff 34%);
+    background: linear-gradient(139deg, #00b2ff 34%, #00b2ff 34%);
+  }
+
   .feedback-form__inner {
+    width: auto;
     padding-top: 45px;
     padding-bottom: 123px;
   }
@@ -2227,26 +2300,41 @@ button,
     margin-top: 10px;
   }
 
+  .feedback-form__form::before {
+    background-image: none;
+  }
+
   .feedback-form__form {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
+  }
+
+  .feedback-form__form h3 {
+    margin-bottom: 5px;
   }
 
   .feedback-form__form p {
     width: 100%;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 
   .feedback-form__form input {
     width: 100%;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .feedback-form__form textarea {
     width: 100%;
     padding-top: 33px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     margin-bottom: 33px;
+    margin-left: 0;
+  }
+
+  .feedback-form__form button {
+    margin-left: 0;
+    padding-bottom: 13px;
   }
 
   .feedback-form__form input[type=checkbox] {
@@ -2254,6 +2342,7 @@ button,
   }
 
   .feedback-form__input-wrapper-left {
+    margin-right: 0;
     padding-right: 15px;
     width: 50%;
     display: -webkit-box;
@@ -2364,7 +2453,7 @@ button,
   }
 
   .footer {
-    min-height: 475px;
+    min-height: 0;
   }
 
   .footer__inner {
@@ -2383,7 +2472,7 @@ button,
     justify-content: center;
     padding-right: 6px;
     padding-top: 2px;
-    margin-bottom: 36px;
+    margin-bottom: 18px;
   }
 
   .footer-social__list {
@@ -2403,7 +2492,7 @@ button,
     width: 100%;
     position: relative;
     padding-top: 16px;
-    margin-bottom: 43px;
+    margin-bottom: 20px;
   }
 
   .footer-navigation::before {
@@ -2494,6 +2583,7 @@ button,
     width: 100%;
     padding-left: 0;
     min-height: 0;
+    margin-bottom: 42px;
   }
 
   .footer-contacts::after {
@@ -2643,7 +2733,6 @@ button,
   }
 
   .advantages__item {
-    width: 100%;
     min-height: 325px;
     padding: 30px 30px 35px;
   }
@@ -2711,6 +2800,15 @@ button,
 
   .about-company__spoiler-content p:last-child {
     margin-bottom: 10px;
+  }
+
+  .about-company__text-hide {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
   }
 
   .about-company__read-more-trigger {

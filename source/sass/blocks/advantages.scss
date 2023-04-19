@@ -81,6 +81,14 @@
     }
   }
 
+  @include vp-1439 {
+    width: 500px;
+  }
+
+  @include vp-1279 {
+    width: 400px;
+  }
+
 
   @include vp-1023 {
     width: 320px;
@@ -100,7 +108,6 @@
   }
 
   @include vp-768 {
-    width: 100%;
     min-height: 325px;
     padding: 30px 30px 35px;
 

@@ -103,6 +103,7 @@
     margin-left: 0;
     margin-right: 12px;
     margin-top: 15px;
+    order: 2;
   }
 
   input[type="checkbox"]:focus + label::before {
@@ -110,14 +111,15 @@
   }
 
   input[type="checkbox"] + label {
+    position: relative;
+    width: auto;
+    margin-top: 16px;
+    order: 2;
     font-family: "PT Mono", sans-serif;
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
     opacity: 0.8;
-    width: auto;
-    margin-top: 16px;
-    position: relative;
 
     &::before {
       content: "";
