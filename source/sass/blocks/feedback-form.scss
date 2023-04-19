@@ -88,7 +88,7 @@
   }
 
   input[type="checkbox"]:focus + label::before {
-    border: 2px solid $color-alice-blue;
+    background-color: $color-alice-blue;
   }
 
   input[type="checkbox"] + label {

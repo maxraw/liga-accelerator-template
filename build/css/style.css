@@ -1507,7 +1507,7 @@ button,
 }
 
 .feedback-form__form input[type=checkbox]:focus + label::before {
-  border: 2px solid #f2f5f7;
+  background-color: #f2f5f7;
 }
 
 .feedback-form__form input[type=checkbox] + label {
@@ -1814,7 +1814,7 @@ button,
 }
 
 .modal-feedback__form input[type=checkbox]:focus + label::before {
-  border: 2px solid #f2f5f7;
+  background-color: #f2f5f7;
 }
 
 .modal-feedback__form input[type=checkbox] + label {
