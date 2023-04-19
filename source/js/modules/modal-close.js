@@ -8,6 +8,12 @@ const windowClose = () => {
   modalFeedback.style.display = 'none';
   document.body.style.overflow = 'auto';
   wrapper.inert = false;
+
+  const previouslyFocusedElement = document.querySelector('.js-modal-focus');
+
+  if (previouslyFocusedElement) {
+    previouslyFocusedElement.focus();
+  }
 };
 
 const modalClose = () => {
