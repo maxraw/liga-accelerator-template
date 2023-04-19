@@ -34,21 +34,24 @@
 
 .products__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
 
   @include vp-1279 {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
 
 .products__item {
   position: relative;
-  margin-right: 85px;
+  margin-right: 55px;
   margin-bottom: 30px;
+  overflow: hidden;
   opacity: 0.6;
 
   &:last-child {

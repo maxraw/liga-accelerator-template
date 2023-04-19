@@ -1,10 +1,10 @@
 .modal-feedback {
   position: absolute;
   width: 500px;
-  height: 610px;
+  min-height: 610px;
   z-index: 5;
-  top: 18%;
-  left: 36.5%;
+  top: 16.2%;
+  justify-self: center;
   background-color: $color-deep-sky-blue;
   display: none;
 

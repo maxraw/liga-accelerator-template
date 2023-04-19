@@ -126,6 +126,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: auto;
+  min-width: 380px;
   max-height: 160px;
   margin: 0;
   padding: 0;
@@ -133,6 +134,7 @@
   list-style: none;
   font-family: "PT Mono", sans-serif;
   line-height: 135%;
+  overflow: hidden;
 
   @include vp-1023 {
     display: block;

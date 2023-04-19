@@ -47,6 +47,7 @@
 
   @include vp-1023 {
     min-width: 269px;
+    flex-wrap: nowrap;
     padding: 0;
     width: auto;
   }
@@ -76,7 +77,7 @@
   }
 
   @include vp-768 {
-    width: 224px;
+    min-width: 224px;
   }
 }
 
@@ -107,8 +108,8 @@
 
 .header__button {
   cursor: pointer;
-  min-width: 160px;
-  min-height: 40px;
+  max-width: 160px;
+  max-height: 40px;
   margin-top: 15px;
   margin-bottom: auto;
   margin-left: auto;
@@ -123,6 +124,7 @@
   border: 1px solid $color-text-white;
   border-radius: 3px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  overflow: hidden;
 
   &:hover {
     color: $color-deep-sky-blue;

@@ -7,7 +7,7 @@ const wrapper = document.querySelector('.wrapper');
 const modalOpen = () => {
   buttonOpen.addEventListener('click', () => {
     document.body.style.overflow = 'hidden';
-    isOpen.style.display = 'block';
+    isOpen.style.display = 'grid';
     modalFeedback.style.display = 'block';
     inputName.focus();
     wrapper.inert = true;

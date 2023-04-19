@@ -59,7 +59,7 @@
     font-size: 22px;
     line-height: 155%;
     width: 685px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
   @include vp-1023 {
@@ -78,7 +78,7 @@
     p {
       width: 100%;
       margin-top: -11px;
-      margin-bottom: 73px;
+      margin-bottom: 57px;
     }
   }
 
@@ -102,9 +102,11 @@
 
 .prewiev__button {
   cursor: pointer;
-  width: 410px;
+  display: block;
+  max-width: 410px;
+  max-height: 55px;
   border: none;
-  min-height: 55px;
+  overflow: hidden;
   background: $color-deep-sky-blue;
   color: $color-alice-blue;
   border-radius: 3px;
@@ -114,10 +116,15 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 17px 27px;
+  padding: 17px 10px;
 
   &:hover {
     border: 1px solid $color-border;
+  }
+
+  span {
+    display: block;
+    overflow: hidden;
   }
 
   @include vp-1023 {
@@ -125,8 +132,7 @@
   }
 
   @include vp-768 {
-    display: inline-block;
-    width: 100%;
+    width: 270px;
     height: 40px;
     min-height: 40px;
     margin-left: 0;
