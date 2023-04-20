@@ -21,12 +21,14 @@ const modalClose = () => {
     if (evt.key === 'Escape') {
       evt.preventDefault();
       windowClose();
+      window.focusLock.unlock();
     }
   });
 
   isOpen.addEventListener('click', (e) => {
     if (e.target === isOpen) {
       windowClose();
+      window.focusLock.unlock();
     }
   });
 
