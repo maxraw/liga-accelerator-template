@@ -1,7 +1,6 @@
 .footer-contacts {
-  width: 315px;
   min-height: 130px;
-  margin: 0 30px 30px auto;
+  margin: 0 0 0 100px;
   position: relative;
   color: $color-text-opacity;
 
@@ -28,14 +27,14 @@
   }
 
   @include vp-1279 {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   @include vp-1023 {
     width: 50%;
     margin: 0;
     padding-left: 15px;
-    padding-top: 1px;
+    padding-top: 0;
   }
 
   @include vp-768 {

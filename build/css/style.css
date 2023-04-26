@@ -937,8 +937,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 20px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1006,8 +1004,7 @@ button,
 }
 
 .footer-navigation {
-  width: 19.5vw;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 110px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1068,9 +1065,8 @@ button,
 }
 
 .footer-contacts {
-  width: 315px;
   min-height: 130px;
-  margin: 0 30px 30px auto;
+  margin: 0 0 0 100px;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1152,7 +1148,6 @@ button,
   margin-right: 55px;
   margin-bottom: 30px;
   overflow: hidden;
-  opacity: 0.6;
 }
 
 .products__item:last-child {
@@ -1998,8 +1993,12 @@ button,
     margin: 0;
   }
 
+  .footer-navigation__list {
+    margin: 0;
+  }
+
   .footer-contacts {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .products__inner {
@@ -2136,6 +2135,8 @@ button,
   }
 
   .footer__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 0;
   }
 
@@ -2160,12 +2161,15 @@ button,
 
   .footer-social__list {
     margin: 0;
-    padding-top: 55px;
-    width: 0;
+    padding-top: 35px;
+    width: auto;
     min-width: 168px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .footer-social__item {
@@ -2191,9 +2195,8 @@ button,
   }
 
   .footer-navigation {
-    width: auto;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .footer-navigation h2 {
@@ -2202,7 +2205,8 @@ button,
   }
 
   .footer-navigation__list {
-    display: block;
+    min-width: auto;
+    max-height: inherit;
     padding-top: 19px;
   }
 
@@ -2215,16 +2219,16 @@ button,
     width: 50%;
     margin: 0;
     padding-left: 15px;
-    padding-top: 1px;
+    padding-top: 0;
   }
 
   .products__inner {
-    padding: 55px 50px 44px;
+    padding: 55px 50px 77px;
   }
 
   .products__item {
     margin-right: 0;
-    margin-bottom: 31px;
+    margin-bottom: 0;
   }
 
   .products__item p {
@@ -2288,7 +2292,7 @@ button,
   }
 
   .about-company {
-    padding: 0 0 72px 0;
+    padding: 0 0 80px 0;
   }
 
   .about-company__inner {
@@ -2307,7 +2311,7 @@ button,
 
   .about-company__spoiler-content p {
     margin-top: 8px;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
   }
 
   .about-company__read-more-trigger {
@@ -2693,7 +2697,7 @@ button,
 
   .products__inner {
     padding-top: 47px;
-    padding-bottom: 53px;
+    padding-bottom: 86px;
   }
 
   .products__inner p {

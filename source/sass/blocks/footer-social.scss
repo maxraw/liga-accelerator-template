@@ -35,10 +35,11 @@
 
   @include vp-1023 {
     margin: 0;
-    padding-top: 55px;
-    width: 0;
+    padding-top: 35px;
+    width: auto;
     min-width: 168px;
     justify-content: flex-end;
+    align-items: center;
   }
 
   @include vp-768 {

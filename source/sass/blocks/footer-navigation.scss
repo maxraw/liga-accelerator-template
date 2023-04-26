@@ -1,7 +1,5 @@
 .footer-navigation {
-  // width: 470px;
-  width: 19.5vw;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 110px;
   color: $color-text-opacity;
 
   h2 {
@@ -19,9 +17,8 @@
   }
 
   @include vp-1023 {
-    width: auto;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 13px;
 
     h2 {
       margin-top: 0;
@@ -136,8 +133,13 @@
   line-height: 135%;
   overflow: hidden;
 
+  @include vp-1279 {
+    margin: 0;
+  }
+
   @include vp-1023 {
-    display: block;
+    min-width: auto;
+    max-height: inherit;
     padding-top: 19px;
   }
 

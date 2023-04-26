@@ -15,12 +15,12 @@
   }
 
   @include vp-1023 {
-    padding: 55px 50px 44px;
+    padding: 55px 50px 77px;
   }
 
   @include vp-768 {
     padding-top: 47px;
-    padding-bottom: 53px;
+    padding-bottom: 86px;
 
     p {
       width: 135px;
@@ -52,7 +52,6 @@
   margin-right: 55px;
   margin-bottom: 30px;
   overflow: hidden;
-  opacity: 0.6;
 
   &:last-child {
     margin-right: 0;
@@ -128,7 +127,7 @@
 
   @include vp-1023 {
     margin-right: 0;
-    margin-bottom: 31px;
+    margin-bottom: 0;
 
     p {
       width: 150px;

@@ -17,7 +17,6 @@
   min-height: 280px;
   padding: 44px 0 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin: 0 auto;
@@ -28,6 +27,7 @@
   }
 
   @include vp-1023 {
+    flex-wrap: wrap;
     padding-top: 0;
   }
 
