@@ -41,6 +41,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
     unlockBtnElement.addEventListener('click', () => window.focusLock.unlock());
+
+    const list = document.querySelector('.footer-navigation__list');
+    const items = list.querySelectorAll('.footer-navigation__item');
+    const itemHeight = items[0].offsetHeight;
+    const itemsPerColumn = Math.ceil(items.length / 2);
+    const totalHeight = itemsPerColumn * itemHeight;
+
+    list.style.height = totalHeight + 'px';
   });
 });
 
