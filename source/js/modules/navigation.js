@@ -1,6 +1,6 @@
 const navigationButton = document.querySelector('.footer-navigation__button');
 const footerNavigation = document.querySelector('.footer-navigation');
-const navigationList = document.querySelector('.footer-navigation__list');
+const navigationList = document.querySelector('.footer-navigation__list-wrapper');
 const navigationListTitle = footerNavigation.querySelector('h2');
 const footerContacts = document.querySelector('.footer-contacts');
 const contactsList = document.querySelector('.footer-contacts__list');

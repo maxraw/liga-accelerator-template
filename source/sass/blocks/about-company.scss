@@ -2,7 +2,7 @@
   padding: 90px 0 102px 0;
 
   @include vp-1023 {
-    padding: 0 0 80px 0;
+    padding: 0 0 77px 0;
   }
 
   @include vp-768 {
@@ -81,7 +81,11 @@
 
     p {
       margin-top: 8px;
-      margin-bottom: 13px;
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -107,6 +111,7 @@
 }
 
 .about-company__user-text-hide {
+  display: block;
   opacity: 0;
   max-height: 0;
   font-size: 0;
@@ -114,6 +119,8 @@
 }
 
 .about-company__read-more:checked ~ .about-company__spoiler-content .about-company__user-text-hide {
+  padding-top: 15px;
+  padding-bottom: 20px;
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
@@ -147,7 +154,7 @@
   display: inline-block;
   min-width: 180px;
   min-height: 45px;
-  margin-top: 17px;
+  margin-top: 15px;
   padding: 15px;
   text-align: center;
   border: 1px solid $color-deep-sky-blue;
@@ -166,13 +173,13 @@
   }
 
   @include vp-1023 {
-    margin-top: 0;
     margin-left: 30px;
   }
 
   @include vp-768 {
     min-width: 160px;
     min-height: 35px;
+    margin-top: 0;
     margin-left: 0;
     padding: 10px;
   }

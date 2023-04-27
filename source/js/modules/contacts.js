@@ -3,7 +3,7 @@ const contactsList = document.querySelector('.footer-contacts__list');
 const contactsListTitle = footerContacts.querySelector('h2');
 const contactsButton = document.querySelector('.footer-contacts__button');
 const footerNavigation = document.querySelector('.footer-navigation');
-const navigationList = document.querySelector('.footer-navigation__list');
+const navigationList = document.querySelector('.footer-navigation__list-wrapper');
 const navigationListTitle = footerNavigation.querySelector('h2');
 
 

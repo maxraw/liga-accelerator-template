@@ -851,8 +851,6 @@ button,
 
 .header__button {
   cursor: pointer;
-  max-width: 160px;
-  max-height: 40px;
   margin-top: 15px;
   margin-bottom: auto;
   margin-left: auto;
@@ -1018,11 +1016,18 @@ button,
   letter-spacing: 0.05em;
 }
 
+.footer-navigation__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
 .footer-navigation__button {
   display: none;
 }
 
-.footer-navigation__list {
+.footer-navigation__first-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1033,21 +1038,26 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: auto;
-  min-width: 380px;
-  max-height: 240px;
+  min-width: 230px;
   margin: 0;
   padding: 0;
   padding-top: 11px;
   list-style: none;
   font-family: "PT Mono", sans-serif;
   line-height: 135%;
-  overflow: hidden;
+}
+
+.footer-navigation__second-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+  font-family: "PT Mono", sans-serif;
+  line-height: 135%;
 }
 
 .footer-navigation__item {
@@ -1066,7 +1076,7 @@ button,
 
 .footer-contacts {
   min-height: 130px;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 105px;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1133,10 +1143,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1145,7 +1156,6 @@ button,
 
 .products__item {
   position: relative;
-  margin-right: 55px;
   margin-bottom: 30px;
   overflow: hidden;
 }
@@ -1354,6 +1364,7 @@ button,
 }
 
 .about-company__user-text-hide {
+  display: block;
   opacity: 0;
   max-height: 0;
   font-size: 0;
@@ -1363,6 +1374,8 @@ button,
 }
 
 .about-company__read-more:checked ~ .about-company__spoiler-content .about-company__user-text-hide {
+  padding-top: 15px;
+  padding-bottom: 20px;
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
@@ -1387,7 +1400,7 @@ button,
   display: inline-block;
   min-width: 180px;
   min-height: 45px;
-  margin-top: 17px;
+  margin-top: 15px;
   padding: 15px;
   text-align: center;
   border: 1px solid #00b2ff;
@@ -1651,9 +1664,7 @@ button,
 
 .prewiev__button {
   cursor: pointer;
-  display: block;
-  max-width: 410px;
-  max-height: 55px;
+  display: inline-block;
   border: none;
   overflow: hidden;
   background: #00b2ff;
@@ -1665,7 +1676,7 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 17px 10px;
+  padding: 15px 27px;
 }
 
 .prewiev__button:hover {
@@ -1673,7 +1684,7 @@ button,
 }
 
 .prewiev__button span {
-  display: block;
+  display: inline-block;
   overflow: hidden;
 }
 
@@ -1702,6 +1713,7 @@ button,
   top: 13px;
   background: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .modal-feedback .modal-feedback__button-close:focus {
@@ -1993,7 +2005,8 @@ button,
     margin: 0;
   }
 
-  .footer-navigation__list {
+  .footer-navigation__first-list {
+    max-height: 230px;
     margin: 0;
   }
 
@@ -2014,8 +2027,7 @@ button,
   }
 
   .products__list {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    gap: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2204,10 +2216,22 @@ button,
     margin-bottom: 0;
   }
 
-  .footer-navigation__list {
+  .footer-navigation__list-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-navigation__first-list {
     min-width: auto;
-    max-height: inherit;
+    max-height: 270px;
     padding-top: 19px;
+  }
+
+  .footer-navigation__second-list {
+    padding-top: 0;
   }
 
   .footer-navigation__item {
@@ -2292,7 +2316,7 @@ button,
   }
 
   .about-company {
-    padding: 0 0 80px 0;
+    padding: 0 0 77px 0;
   }
 
   .about-company__inner {
@@ -2311,11 +2335,14 @@ button,
 
   .about-company__spoiler-content p {
     margin-top: 8px;
-    margin-bottom: 13px;
+    margin-bottom: 19px;
+  }
+
+  .about-company__spoiler-content p:last-child {
+    margin-bottom: 0;
   }
 
   .about-company__read-more-trigger {
-    margin-top: 0;
     margin-left: 30px;
   }
 
@@ -2593,6 +2620,16 @@ button,
     top: -2px;
   }
 
+  .footer-navigation__list-wrapper {
+    display: none;
+    width: 100%;
+  }
+
+  .footer-navigation__list-wrapper.footer-navigation__list--open {
+    display: block;
+    max-height: 100%;
+  }
+
   .footer-navigation__button {
     display: block;
     border: none;
@@ -2601,16 +2638,6 @@ button,
     height: 50px;
     opacity: 0;
     top: 0;
-  }
-
-  .footer-navigation__list {
-    display: none;
-    width: 100%;
-  }
-
-  .footer-navigation__list.footer-navigation__list--open {
-    display: block;
-    max-height: 100%;
   }
 
   .footer-contacts {
@@ -2848,6 +2875,7 @@ button,
   .about-company__read-more-trigger {
     min-width: 160px;
     min-height: 35px;
+    margin-top: 0;
     margin-left: 0;
     padding: 10px;
   }

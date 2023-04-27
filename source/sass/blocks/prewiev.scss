@@ -102,9 +102,7 @@
 
 .prewiev__button {
   cursor: pointer;
-  display: block;
-  max-width: 410px;
-  max-height: 55px;
+  display: inline-block;
   border: none;
   overflow: hidden;
   background: $color-deep-sky-blue;
@@ -116,14 +114,14 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 17px 10px;
+  padding: 15px 27px;
 
   &:hover {
     border: 1px solid $color-border;
   }
 
   span {
-    display: block;
+    display: inline-block;
     overflow: hidden;
   }
 
