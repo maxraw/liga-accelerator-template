@@ -235,11 +235,11 @@
       </section>
       <section class="feedback-form" id="feedback-form-anchor">
         <div class="container feedback-form__inner">
-          <form class="feedback-form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="feedback-form__form" action="https://echo.htmlacademy.ru/" method="POST">
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="feedback-form__input-wrapper-left">
-              <input type="text" placeholder="Имя" id="name" required>
+              <input type="name" placeholder="Имя" id="name" required>
               <label class="visually-hidden" for="name">Введите имя</label>
             </div>
             <div class="feedback-form__input-wrapper-right">
@@ -287,33 +287,37 @@
         <section class="footer-navigation">
           <h2 class="footer-navigation__before-closed">Разделы сайта</h2>
           <button class="footer-navigation__button"><span class="visually-hidden">Подробнее</span></button>
-          <ul class="footer-navigation__list">
-            <li class="footer-navigation__item">
-              <a href="#about-company-anchor" tabindex="0">О Компании</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#products-anchor" tabindex="0">Продукты</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#prodution-anchor" tabindex="0">
-                Производство печатных плат
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#mounting-anchor" tabindex="0">
-                Монтаж печатных плат
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#accessories-anchor" tabindex="0">Комплектующие</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#" tabindex="0">Доставка</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="#contacts-anchor" tabindex="0">Контакты</a>
-            </li>
-          </ul>
+          <div class="footer-navigation__list-wrapper">
+            <ul class="footer-navigation__first-list">
+              <li class="footer-navigation__item">
+                <a href="#about-company-anchor" tabindex="0">О Компании</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#products-anchor" tabindex="0">Продукты</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#prodution-anchor" tabindex="0">
+                  Производство печатных плат
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#mounting-anchor" tabindex="0">
+                  Монтаж печатных плат
+                </a>
+              </li>
+            </ul>
+            <ul class="footer-navigation__second-list">
+              <li class="footer-navigation__item">
+                <a href="#accessories-anchor" tabindex="0">Комплектующие</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" tabindex="0">Доставка</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#contacts-anchor" tabindex="0">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="footer-contacts" id="contacts-anchor">
           <h2 class="footer-contacts__before-closed">Наш офис</h2>
