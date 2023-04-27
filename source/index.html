@@ -239,7 +239,7 @@
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="feedback-form__input-wrapper-left">
-              <input type="name" placeholder="Имя" id="name" required>
+              <input type="text" placeholder="Имя" id="name" name="name" required>
               <label class="visually-hidden" for="name">Введите имя</label>
             </div>
             <div class="feedback-form__input-wrapper-right">
@@ -343,7 +343,8 @@
       <form class="modal-feedback__form" action="https://echo.htmlacademy.ru/" method="post" id="modal-form">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <input class="modal-feedback__name" autofocus type="text" placeholder="Имя" id="modal-name" data-focus required>
+        <input class="modal-feedback__name" autofocus name="name" type="text" placeholder="Имя" id="modal-name"
+          data-focus required>
         <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
         <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required minlength="18" maxlength="18"
           data-tel-input>
