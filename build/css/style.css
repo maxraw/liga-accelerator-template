@@ -851,12 +851,14 @@ button,
 
 .header__button {
   cursor: pointer;
+  width: 160px;
   margin-top: 15px;
   margin-bottom: auto;
   margin-left: auto;
   padding: 12px 15px;
   color: #f2f5f7;
   text-transform: uppercase;
+  word-wrap: break-word;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
