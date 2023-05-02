@@ -42,7 +42,6 @@
     font-size: 36px;
     line-height: 51px;
     font-weight: 400;
-    margin-bottom: 10px;
   }
 
   p {
@@ -51,7 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   input {
@@ -62,8 +61,6 @@
     background: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
     border: 1px solid rgba(4, 20, 39, 0.15);
-    margin-bottom: 22px;
-    margin-right: 25px;
     margin-left: 5px;
 
     &:hover {
@@ -288,9 +285,20 @@
   }
 }
 
-.feedback-form__input-wrapper-left {
+.feedback-form__input-wrapper-left,
+.feedback-form__input-wrapper-right {
+  margin-bottom: 20px;
+
   @include vp-1279 {
-    margin-right: 45px;
+    width: 255px;
+  }
+}
+
+.feedback-form__input-wrapper-left {
+  width: 305px;
+
+  @include vp-1279 {
+    margin-right: 35px;
   }
 
   @include vp-1023 {
@@ -308,6 +316,8 @@
 }
 
 .feedback-form__input-wrapper-right {
+  width: 275px;
+
   @include vp-1023 {
     padding-left: 15px;
     width: 50%;

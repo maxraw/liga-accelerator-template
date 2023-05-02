@@ -244,7 +244,7 @@
             </div>
             <div class="feedback-form__input-wrapper-right">
               <input type="tel" name="tel" placeholder="Телефон" id="phone-mask" required minlength="18" maxlength="18"
-                data-tel-input>
+                data-tel-input pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
               <label class="visually-hidden" for="phone-mask">Укажите Ваш номер телефона</label>
             </div>
             <textarea name="text" cols="80" rows="6" id="question" placeholder="Ваш вопрос"></textarea>
@@ -347,7 +347,7 @@
           data-focus required>
         <label class="visually-hidden" for="modal-name">Укажите Ваше имя</label>
         <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required minlength="18" maxlength="18"
-          data-tel-input>
+          data-tel-input pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
         <label class="visually-hidden" for="phone-mask-modal">Укажите номер телефона</label>
         <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос" id="modal-textfield"></textarea>
         <label class="visually-hidden" for="modal-textfield">Задайте вопрос</label>

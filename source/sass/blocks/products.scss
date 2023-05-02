@@ -35,7 +35,8 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 85px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -98,7 +99,7 @@
     right: 24px;
     bottom: 28px;
     transform: rotate(45deg);
-    z-index: 1000;
+    z-index: 2;
   }
 
   &::after {
@@ -110,7 +111,7 @@
     right: 24px;
     bottom: 22px;
     transform: rotate(-45deg);
-    z-index: 1000;
+    z-index: 2;
   }
 
   @include vp-1439 {
