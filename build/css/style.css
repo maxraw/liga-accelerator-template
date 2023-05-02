@@ -1428,26 +1428,27 @@ button,
 
 .feedback-form__inner {
   width: 1260px;
-  padding: 167px 0 247px;
+  padding: 167px 0 248px;
   margin: 0 auto;
 }
 
 .feedback-form__form {
   color: #f8fdff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
   width: 615px;
   margin-left: auto;
   position: relative;
 }
 
 .feedback-form__form h3 {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
   margin: 0;
   font-size: 36px;
   line-height: 51px;
@@ -1455,12 +1456,16 @@ button,
 }
 
 .feedback-form__form p {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
   font-family: "PT Mono", sans-serif;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .feedback-form__form input {
@@ -1504,12 +1509,6 @@ button,
   width: 15px;
   height: 15px;
   margin: 0;
-  margin-left: 50px;
-  margin-right: 12px;
-  margin-top: 23px;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
 }
 
 .feedback-form__form input[type=checkbox]:focus + label::before {
@@ -1517,17 +1516,22 @@ button,
 }
 
 .feedback-form__form input[type=checkbox] + label {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  margin-left: 40px;
   opacity: 0.8;
   width: 234px;
   margin-top: 16px;
   position: relative;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
   font-family: "PT Mono", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #f8fdff;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .feedback-form__form input[type=checkbox] + label::before {
@@ -1556,14 +1560,18 @@ button,
 }
 
 .feedback-form__form textarea {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
   color: #f8fdff;
   font-family: "PT Mono", sans-serif;
   width: 580px;
-  padding: 23px 15px;
+  padding: 21px 15px;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: 1px solid rgba(4, 20, 39, 0.15);
-  margin-bottom: 30px;
+  margin-bottom: 0;
   margin-left: 5px;
 }
 
@@ -1592,14 +1600,22 @@ button,
 }
 
 .feedback-form__form button {
+  width: 265px;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 0;
+  grid-column-end: 1;
   margin-left: 5px;
-  padding: 14px 70px;
+  padding: 12px 15px;
   background: #041427;
   border-radius: 3px;
   color: #f8fdff;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px solid #041427;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -1621,15 +1637,22 @@ button,
 
 .feedback-form__input-wrapper-left,
 .feedback-form__input-wrapper-right {
-  margin-bottom: 20px;
+  width: 275px;
+  margin-bottom: 10px;
 }
 
 .feedback-form__input-wrapper-left {
-  width: 305px;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 0;
+  grid-column-end: 1;
 }
 
 .feedback-form__input-wrapper-right {
-  width: 275px;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
 }
 
 .prewiev {
@@ -2386,13 +2409,9 @@ button,
     width: 100%;
   }
 
-  .feedback-form__form h3 {
-    margin-bottom: 5px;
-  }
-
   .feedback-form__form p {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
   }
 
   .feedback-form__form input {
@@ -2405,7 +2424,7 @@ button,
     width: 100%;
     padding-top: 33px;
     padding-bottom: 10px;
-    margin-bottom: 33px;
+    margin-bottom: 0;
     margin-left: 0;
   }
 
@@ -2414,14 +2433,10 @@ button,
     padding-bottom: 13px;
   }
 
-  .feedback-form__form input[type=checkbox] {
-    margin: 13px 13px 0 83px;
-  }
-
   .feedback-form__input-wrapper-left {
     margin-right: 0;
     padding-right: 15px;
-    width: 50%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2429,7 +2444,7 @@ button,
 
   .feedback-form__input-wrapper-right {
     padding-left: 15px;
-    width: 50%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2902,10 +2917,25 @@ button,
   }
 
   .feedback-form__form input[type=checkbox] + label {
-    margin-top: 22px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: 33px;
+  }
+
+  .feedback-form__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-row-gap: 0;
   }
 
   .feedback-form__form h3 {
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -2913,7 +2943,7 @@ button,
   .feedback-form__form p {
     font-size: 14px;
     line-height: 134.4%;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .feedback-form__form input {
@@ -2922,9 +2952,9 @@ button,
   }
 
   .feedback-form__form textarea {
-    margin-bottom: 29px;
+    margin-bottom: 15px;
     padding-top: 26px;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
 
   .feedback-form__form label {
@@ -2937,19 +2967,31 @@ button,
 
   .feedback-form__form button {
     width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .feedback-form__input-wrapper-left,
+  .feedback-form__input-wrapper-right {
+    margin-bottom: 0;
   }
 
   .feedback-form__input-wrapper-left {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
     padding-right: 0;
-    width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
   .feedback-form__input-wrapper-right {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
     padding-left: 0;
-    width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
