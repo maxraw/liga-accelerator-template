@@ -39,7 +39,7 @@
 
   h3 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     margin: 0;
     font-size: 36px;
     line-height: 51px;
@@ -48,7 +48,7 @@
 
   p {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     font-family: "PT Mono", sans-serif;
     margin: 0;
     font-weight: 400;
@@ -90,7 +90,7 @@
 
   input[type="checkbox"] + label {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: -1;
     margin-left: 40px;
     opacity: 0.8;
     width: 234px;
@@ -141,7 +141,7 @@
 
   textarea {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     color: $color-default-white;
     font-family: "PT Mono", sans-serif;
     width: 580px;
@@ -326,7 +326,7 @@
 
   @include vp-768 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     padding-right: 0;
     justify-content: center;
   }
@@ -334,7 +334,7 @@
 
 .feedback-form__input-wrapper-right {
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: -1;
 
   @include vp-1023 {
     padding-left: 15px;
@@ -345,7 +345,7 @@
 
   @include vp-768 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     padding-left: 0;
     justify-content: center;
   }
